@@ -1,0 +1,147 @@
+.footer {
+  background-color: var(--dark);
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 80px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 2fr 1fr 1.5fr;
+  }
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--white);
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.description {
+  line-height: 1.8;
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.colTitle {
+  color: var(--white);
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linkList a {
+  transition: color 0.3s ease;
+}
+
+.linkList a:hover {
+  color: var(--primary-light);
+}
+
+.contactCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.icon {
+  color: var(--primary-light);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.contactItem strong {
+  display: block;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.contactItem p {
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.contactItem a {
+  color: var(--primary-light);
+  font-weight: 500;
+}
+
+.contactItem a:hover {
+  text-decoration: underline;
+}
+
+.bottomBar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .bottomBar {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.legalLinks {
+  display: flex;
+  gap: 24px;
+}
+
+.legalLinks a:hover {
+  color: var(--white);
+}

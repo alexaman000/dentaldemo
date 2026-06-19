@@ -1,0 +1,163 @@
+.implantSection {
+  background-color: var(--dark);
+  color: var(--white);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+}
+
+.imageWrapper {
+  flex: 1;
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+}
+
+.imageBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-premium);
+}
+
+.beforeAfterImg {
+  object-fit: cover;
+}
+
+.floatingBadge {
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 16px 24px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.badgeIcon {
+  color: var(--secondary);
+}
+
+.floatingBadge div {
+  display: flex;
+  flex-direction: column;
+}
+
+.floatingBadge strong {
+  font-size: 1.125rem;
+}
+
+.floatingBadge span {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.content {
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--secondary-light);
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 2.25rem;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.title span {
+  background: linear-gradient(135deg, var(--secondary-light), #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.benefitsList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 600px) {
+  .benefitsList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.05rem;
+}
+
+.checkIcon {
+  width: 24px;
+  height: 24px;
+  background-color: rgba(46, 125, 50, 0.2);
+  color: #4caf50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.actionGroup {
+  margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .floatingBadge {
+    right: 5%;
+    bottom: 5%;
+  }
+}

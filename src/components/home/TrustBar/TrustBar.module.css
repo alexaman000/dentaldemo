@@ -1,0 +1,57 @@
+.trustBar {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 16px 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.scroller {
+  max-width: 100vw;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+}
+
+.scrollerInner {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  gap: 40px;
+  padding-left: 40px;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.icon {
+  color: var(--secondary-light);
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.scroller:hover .scrollerInner {
+  animation-play-state: paused;
+}
