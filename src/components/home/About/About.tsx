@@ -37,7 +37,7 @@ export const About = () => {
             <h2 className={styles.title}>Creating Healthy Smiles with <span className="text-gradient">Advanced Care</span></h2>
             
             <p className={styles.description}>
-              At Krishna Dental Care & Implant Center, we believe every smile deserves the highest quality treatment. Our clinic combines advanced dental technology with compassionate care to deliver comfortable and effective treatments for patients of all ages.
+              At 32 Beats Dental Clinic, we believe every smile deserves the highest quality treatment. Our clinic combines advanced dental technology with compassionate care to deliver comfortable and effective treatments for patients of all ages.
             </p>
             <p className={styles.description}>
               Our mission is to provide painless, ethical and affordable dental solutions while maintaining the highest standards of hygiene and patient safety.
@@ -64,34 +64,30 @@ export const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <Card variant="premium" className={styles.doctorsCard}>
-              <h3 className={styles.cardTitle}>Our Expert Team</h3>
-              <ul className={styles.doctorList}>
-                {doctors.map((doc, idx) => (
-                  <li key={idx} className={styles.doctorItem}>
-                    <div className={styles.doctorAvatar}>👨‍⚕️</div>
-                    <div className={styles.doctorInfo}>
-                      <h4 className={styles.doctorName}>{doc.name}</h4>
-                      <span className={styles.doctorRole}>{doc.role}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </Card>
-            
-            <Card className={styles.branchCard}>
-              <h3 className={styles.cardTitle}>Two Locations to Serve You</h3>
+              <h3 className={styles.cardTitle}>Opening Hours</h3>
               <div className={styles.branchItem}>
-                <MapPin className={styles.branchIcon} size={20} />
+                <Clock className={styles.branchIcon} size={20} />
                 <div>
-                  <strong>Godadara Branch</strong>
-                  <p>50/77, 2nd Floor, S.K. Nagar 3, Jogani Mata Char Rasta, Surat</p>
+                  <strong>Monday - Saturday</strong>
+                  <p>9:30 AM – 8:30 PM</p>
                 </div>
               </div>
               <div className={styles.branchItem}>
+                <Clock className={styles.branchIcon} size={20} />
+                <div>
+                  <strong>Sunday</strong>
+                  <p>9:30 AM – 8:30 PM</p>
+                </div>
+              </div>
+            </Card>
+            
+            <Card className={styles.branchCard}>
+              <h3 className={styles.cardTitle}>Emergency Case</h3>
+              <div className={styles.branchItem}>
                 <MapPin className={styles.branchIcon} size={20} />
                 <div>
-                  <strong>Dindoli Branch</strong>
-                  <p>First Floor, Lakshmi Narayan Nagar 2, Sai Baba Mandir, Surat</p>
+                  <strong>Clinic Location</strong>
+                  <p>SHREE ROAD, VADOD BAMROLI, UDHANA, SURAT</p>
                 </div>
               </div>
             </Card>

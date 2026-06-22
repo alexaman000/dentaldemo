@@ -33,12 +33,12 @@ export const Navbar = () => {
       <div className={styles.topBar}>
         <div className={`container ${styles.topBarContainer}`}>
           <div className={styles.contactInfo}>
-            <a href="tel:+919724398474" className={styles.topLink}>
-              <Phone size={14} /> Godadara: +91 97243 98474
+            <a href="tel:+919429784024" className={styles.topLink}>
+              <Phone size={14} /> Call Us: +91 9429784024
             </a>
             <span className={styles.divider}>|</span>
-            <a href="tel:+919173298474" className={styles.topLink}>
-              <Phone size={14} /> Dindoli: +91 91732 98474
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className={styles.topLink}>
+              <MapPin size={14} /> Udhana, Surat
             </a>
           </div>
           <div className={styles.topRight}>
@@ -50,7 +50,7 @@ export const Navbar = () => {
       {/* Main Navbar */}
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo}>
-          <span className="text-gradient">Krishna</span> Dental Care
+          <span className="text-gradient">32 Beats</span> Dental Clinic
         </Link>
 
         {/* Desktop Nav */}

@@ -16,13 +16,13 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Best Dentist in Godadara | KRISHNA DENTAL CARE & IMPLANT CENTER",
+  title: "Best Dentist in Surat | 32 BEATS DENTAL CLINIC",
   description: "Advanced Dental Treatments, Dental Implants, Cosmetic Dentistry, Root Canal Treatment & Complete Oral Care in Surat.",
   openGraph: {
-    title: "KRISHNA DENTAL CARE & IMPLANT CENTER",
+    title: "32 BEATS DENTAL CLINIC",
     description: "Creating Healthy Smiles with Advanced Dental Care.",
-    url: "https://krishnadentalcare.com",
-    siteName: "Krishna Dental Care & Implant Center",
+    url: "https://32beatsdentalclinic.com",
+    siteName: "32 Beats Dental Clinic",
     locale: "en_US",
     type: "website",
   },

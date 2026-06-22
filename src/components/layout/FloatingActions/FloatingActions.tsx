@@ -30,7 +30,7 @@ export const FloatingActions = () => {
   return (
     <div className={styles.floatingContainer}>
       <a 
-        href="https://wa.me/919724398474" 
+        href="https://wa.me/919429784024" 
         target="_blank" 
         rel="noopener noreferrer" 
         className={`${styles.actionBtn} ${styles.whatsappBtn}`}
@@ -40,7 +40,7 @@ export const FloatingActions = () => {
       </a>
       
       <a 
-        href="tel:+919724398474" 
+        href="tel:+919429784024" 
         className={`${styles.actionBtn} ${styles.callBtn}`}
         aria-label="Call"
       >

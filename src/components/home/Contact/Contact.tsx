@@ -11,7 +11,6 @@ type FormData = {
   name: string;
   phone: string;
   email: string;
-  branch: string;
   treatment: string;
   date: string;
   time: string;
@@ -25,8 +24,8 @@ export const Contact = () => {
     // Ideally this would connect to an API route. 
     // For now, we simulate a WhatsApp redirect or console log.
     console.log(data);
-    const text = `Hi, I'd like to book an appointment at the ${data.branch} branch for ${data.treatment} on ${data.date} at ${data.time}. My name is ${data.name}.`;
-    const phone = data.branch === 'Godadara' ? '919724398474' : '919173298474';
+    const text = `Hi, I'd like to book an appointment for ${data.treatment} on ${data.date} at ${data.time}. My name is ${data.name}.`;
+    const phone = '919429784024';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
   };
 
@@ -37,44 +36,26 @@ export const Contact = () => {
           <span className={styles.badge}>Get In Touch</span>
           <h2 className={styles.title}>Book Your <span className="text-gradient">Appointment</span></h2>
           <p className={styles.subtitle}>
-            Schedule your visit at either of our two convenient locations in Surat.
+            Schedule your visit at our state-of-the-art clinic in Surat.
           </p>
         </div>
 
         <div className={styles.grid}>
           <div className={styles.infoCol}>
             <Card variant="premium" className={styles.infoCard}>
-              <h3 className={styles.cardTitle}>Godadara Branch</h3>
+              <h3 className={styles.cardTitle}>32 Beats Dental Clinic</h3>
               <div className={styles.infoItem}>
                 <MapPin className={styles.icon} size={24} />
                 <div>
                   <strong>Address</strong>
-                  <p>50/77, 2nd Floor, S.K. Nagar 3, Jogani Mata Char Rasta, BJP Karyalaya, Godadara Main Road, Surat 395012</p>
+                  <p>SHREE ROAD, VADOD BAMROLI, UDHANA, SURAT, GUJARAT 394210</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <Phone className={styles.icon} size={24} />
                 <div>
                   <strong>Phone / WhatsApp</strong>
-                  <p><a href="tel:+919724398474">+91 97243 98474</a></p>
-                </div>
-              </div>
-
-              <div className={styles.divider}></div>
-
-              <h3 className={styles.cardTitle}>Dindoli Branch</h3>
-              <div className={styles.infoItem}>
-                <MapPin className={styles.icon} size={24} />
-                <div>
-                  <strong>Address</strong>
-                  <p>First Floor, Lakshmi Narayan Nagar 2, Sai Baba Mandir, Dindoli, Surat</p>
-                </div>
-              </div>
-              <div className={styles.infoItem}>
-                <Phone className={styles.icon} size={24} />
-                <div>
-                  <strong>Phone / WhatsApp</strong>
-                  <p><a href="tel:+919173298474">+91 91732 98474</a></p>
+                  <p><a href="tel:+919429784024">+91 94297 84024</a></p>
                 </div>
               </div>
 
@@ -91,14 +72,14 @@ export const Contact = () => {
 
             <div className={styles.mapContainer}>
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.579178550742!2d72.8596637!3d21.169123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e38e895c1cb%3A0xc68eaefaf701045a!2sKRISHNA%20DENTAL%20CARE%20%26%20IMPLANT%20CENTER!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.439165383186!2d72.82563361543026!3d21.134884289895316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be051e70e3ebbd5%3A0x6b107b36f1c79a4f!2sUdhana%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
                 allowFullScreen={true} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Godadara Branch Location"
+                title="Clinic Location"
               ></iframe>
             </div>
           </div>
@@ -127,14 +108,7 @@ export const Contact = () => {
                 </div>
 
                 <div className={styles.formRow}>
-                  <div className={styles.formGroup}>
-                    <label>Select Branch *</label>
-                    <select {...register('branch', { required: true })} className={styles.input}>
-                      <option value="Godadara">Godadara Branch</option>
-                      <option value="Dindoli">Dindoli Branch</option>
-                    </select>
-                  </div>
-                  <div className={styles.formGroup}>
+                  <div className={styles.formGroup} style={{ width: '100%' }}>
                     <label>Treatment Type</label>
                     <select {...register('treatment')} className={styles.input}>
                       <option value="General Checkup">General Checkup</option>

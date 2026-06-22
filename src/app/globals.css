@@ -1,18 +1,18 @@
 :root {
   /* Color Palette */
-  --primary: #1E88E5;
-  --primary-light: #4b9fea;
-  --primary-dark: #155fa0;
-  --secondary: #00BCD4;
-  --secondary-light: #33c9dd;
-  --background: #F8FBFF;
+  --primary: #0F172A; /* Deep Navy */
+  --primary-light: #1E293B;
+  --primary-dark: #0B1120;
+  --secondary: #14B8A6; /* Mint/Teal */
+  --secondary-light: #2DD4BF;
+  --background: #F8FAFC;
   --white: #FFFFFF;
-  --dark: #202124;
-  --dark-light: #3c4043;
-  --success: #2E7D32;
-  --text-main: #333333;
-  --text-muted: #666666;
-  --border-color: #E0E0E0;
+  --dark: #020617;
+  --dark-light: #334155;
+  --success: #10B981;
+  --text-main: #334155;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
 
   /* Glassmorphism Variables */
   --glass-bg: rgba(255, 255, 255, 0.7);

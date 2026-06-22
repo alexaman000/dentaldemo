@@ -8,28 +8,28 @@ const reviews = [
   {
     id: 1,
     name: "Ramesh Patel",
-    text: "Excellent service! I had my root canal done by Dr. Prakash Siyan. It was completely painless and the clinic is very hygienic.",
+    text: "Excellent service! I had my root canal done here. It was completely painless and the clinic is very hygienic.",
     rating: 5,
     date: "2 weeks ago"
   },
   {
     id: 2,
     name: "Sneha Desai",
-    text: "Dr. Jaydeep Sakariya is the best cosmetic dentist in Surat. I got veneers done and my smile looks completely natural now.",
+    text: "The best cosmetic dentistry in Surat. I got veneers done and my smile looks completely natural now.",
     rating: 5,
     date: "1 month ago"
   },
   {
     id: 3,
     name: "Amit Sharma",
-    text: "Very affordable and high-quality treatment. Took my daughter to Dr. Nidhi Jaani, she was very comfortable and not scared at all.",
+    text: "Very affordable and high-quality treatment. Took my daughter here, she was very comfortable and not scared at all.",
     rating: 5,
     date: "2 months ago"
   },
   {
     id: 4,
     name: "Pooja Singh",
-    text: "State-of-the-art clinic with advanced equipment. Got my implants done here, highly recommended for everyone in Godadara.",
+    text: "State-of-the-art clinic with advanced equipment. Got my implants done here, highly recommended for everyone.",
     rating: 5,
     date: "3 months ago"
   }

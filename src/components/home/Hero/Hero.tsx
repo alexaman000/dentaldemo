@@ -28,7 +28,7 @@ export const Hero = () => {
               <span className="text-gradient">Expert Care</span>
             </h1>
             <p className={styles.subtitle}>
-              Advanced Dental Treatments, Dental Implants, Cosmetic Dentistry, Root Canal Treatment & Complete Oral Care across two branches in Godadara and Dindoli.
+              Advanced Dental Treatments, Dental Implants, Cosmetic Dentistry, Root Canal Treatment & Complete Oral Care in Surat.
             </p>
             
             <div className={styles.ctaGroup}>
@@ -41,7 +41,7 @@ export const Hero = () => {
               >
                 Book Appointment
               </Button>
-              <a href="tel:+919724398474" style={{ textDecoration: 'none' }}>
+              <a href="tel:+919429784024" style={{ textDecoration: 'none' }}>
                 <Button variant="outline" size="lg" icon={<Phone size={20} />}>
                   Call Us Now
                 </Button>
@@ -58,7 +58,7 @@ export const Hero = () => {
               <div className={styles.statDivider}></div>
               <div className={styles.statItem}>
                 <div className={styles.statText}>
-                  <strong>2</strong> Branches in Surat
+                  <strong>Premium</strong> Location
                 </div>
               </div>
             </div>
@@ -74,18 +74,13 @@ export const Hero = () => {
           >
             <div className={styles.imageBox}>
               <Image 
-                src="/gallery/2.jpeg" 
-                alt="Dr. Jaydeep Sakariya" 
+                src="/hero_patient.png" 
+                alt="Happy Dental Patient" 
                 fill 
                 className={styles.doctorImage} 
                 priority 
                 sizes="(max-width: 768px) 100vw, 500px"
               />
-            </div>
-            
-            <div className={styles.doctorInfoCard}>
-              <div className={styles.doctorName}>Dr. Jaydeep Sakariya</div>
-              <div className={styles.doctorTitle}>Ortho & Cosmetic Dentist</div>
             </div>
           </motion.div>
         </div>

@@ -11,13 +11,13 @@ export const Footer = () => {
           {/* Brand Col */}
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logo}>
-              <span className="text-gradient">Krishna</span> Dental Care
+              <span className="text-gradient">32 Beats</span> Dental Clinic
             </Link>
             <p className={styles.description}>
               Creating Healthy Smiles with Advanced Dental Care. Your trusted destination for comprehensive and painless dentistry in Surat.
             </p>
             <div className={styles.socialLinks}>
-              <a href="https://www.facebook.com/762360440298911" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Facebook">
+              <a href="#" className={styles.socialIcon} aria-label="Facebook">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               </a>
               <a href="#" className={styles.socialIcon} aria-label="Instagram">
@@ -47,18 +47,16 @@ export const Footer = () => {
             <div className={styles.contactItem}>
               <MapPin className={styles.icon} size={18} />
               <div>
-                <strong>Godadara Branch:</strong>
-                <p>50/77, 2nd Floor, S.K. Nagar 3, Godadara Main Road, Surat</p>
-                <a href="tel:+919724398474">+91 97243 98474</a>
+                <strong>Clinic Address:</strong>
+                <p>SHREE ROAD, VADOD BAMROLI, UDHANA, SURAT, GUJARAT 394210</p>
               </div>
             </div>
 
             <div className={styles.contactItem}>
-              <MapPin className={styles.icon} size={18} />
+              <Phone className={styles.icon} size={18} />
               <div>
-                <strong>Dindoli Branch:</strong>
-                <p>1st Floor, Lakshmi Narayan Nagar 2, Dindoli, Surat</p>
-                <a href="tel:+919173298474">+91 91732 98474</a>
+                <strong>Phone:</strong>
+                <p><a href="tel:+919429784024">+91 94297 84024</a></p>
               </div>
             </div>
             
@@ -73,7 +71,7 @@ export const Footer = () => {
         </div>
 
         <div className={styles.bottomBar}>
-          <p>&copy; {new Date().getFullYear()} Krishna Dental Care & Implant Center. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} 32 Beats Dental Clinic. All rights reserved.</p>
           <div className={styles.legalLinks}>
             <Link href="#">Privacy Policy</Link>
             <Link href="#">Terms of Service</Link>
